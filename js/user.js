@@ -1,6 +1,7 @@
 
 
 let main=document.querySelector(".main");
+let h1=document.querySelector(".main h1");
 
 document.addEventListener("DOMContentLoaded", () => {
     let url = window.location.href;
@@ -20,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     users.forEach(element => {
         if(element.email==email){
-            let h1=document.createElement("h1");
             h1.innerHTML=`Hello  ${element.username}!`;
             main.appendChild(h1);
         }

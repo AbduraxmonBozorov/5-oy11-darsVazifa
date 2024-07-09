@@ -54,7 +54,7 @@ button && button.addEventListener("click", (event)=>{
 
    if(users.length>0){
     users.forEach(element => {
-        if(element.email=user.email){
+        if(element.email==user.email){
             alert("This email is already exist");
             return ;
         }
