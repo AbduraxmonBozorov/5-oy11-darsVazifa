@@ -48,7 +48,7 @@ button.addEventListener("click", (event) => {
         data.forEach(element => {
             if (element.email != user.email) {
                 alert("This email is not registered!");
-                window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/registration.html`);
+                window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/pages/registration.html`);
                 return;
             } else if (element.email == user.email && element.password == user.password) {
                 window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/pages/user.html?email=${user.email}`);
