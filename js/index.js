@@ -51,7 +51,7 @@ button.addEventListener("click", (event) => {
                 window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/registration.html`);
                 return;
             } else if (element.email == user.email && element.password == user.password) {
-                window.location.assign(`http://127.0.0.1:5500/pages/user.html?email=${user.email}`);
+                window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/pages/user.html?email=${user.email}`);
                 return;
             } else if (element.email != user.password || element.password != user.password) {
                 alert("Email or password error");
