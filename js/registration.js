@@ -57,7 +57,7 @@ button && button.addEventListener("click", (event)=>{
     users.forEach(element => {
         if(element.email=user.email){
             alert("This email is already exist");
-            window.location.assign(`http://127.0.0.1:5500/index.html`);
+            window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/index.html`);
             return ;
         }
     });
@@ -65,7 +65,7 @@ button && button.addEventListener("click", (event)=>{
 
    users.push(user);
    localStorage.setItem("users", JSON.stringify(users));
-   window.location.assign(`http://127.0.0.1:5500/pages/user.html?email=${user.email}`);
+   window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/pages/user.html?email=${user.email}`);
 
    form.reset();
 

@@ -48,7 +48,7 @@ button.addEventListener("click", (event) => {
         data.forEach(element => {
             if (element.email != user.email) {
                 alert("This email is not registered!");
-                window.location.assign(`http://127.0.0.1:5500/registration.html`);
+                window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/registration.html`);
                 return;
             } else if (element.email == user.email && element.password == user.password) {
                 window.location.assign(`http://127.0.0.1:5500/pages/user.html?email=${user.email}`);
@@ -61,7 +61,7 @@ button.addEventListener("click", (event) => {
 
     } else {
         alert("This email is not registred!");
-        window.location.assign(`http://127.0.0.1:5500/pages/registration.html`);
+        window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/pages/registration.html`);
     }
 
     form.reset();
