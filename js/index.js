@@ -57,11 +57,13 @@ button.addEventListener("click", (event) => {
                 alert("Email or password error");
                 return;
             }
+            else if (element.email == user.email && element.email == user.email) {
+                alert("Successfull!");
+                window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/pages/user.html?email=${element.email}`);
+                return;
+            }
         });
 
-    }else if(element.email==user.email && element.email==user.email){
-        alert("Successfull!");
-        window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/pages/user.html?email=${element.email}`);
     } else {
         alert("This email is not registred!");
         window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/pages/registration.html`);
