@@ -39,7 +39,6 @@ function validate(){
 
 button && button.addEventListener("click", (event)=>{
     event.preventDefault();
-    console.log('salom');
     isValid=validate();
     if(!isValid){
         return ;
@@ -57,7 +56,6 @@ button && button.addEventListener("click", (event)=>{
     users.forEach(element => {
         if(element.email=user.email){
             alert("This email is already exist");
-            window.location.assign(`https://5-oy11-dars-vazifa.vercel.app/index.html`);
             return ;
         }
     });
